@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="maxGap">16dp</dimen>
+    <dimen name="mediumGap">8dp</dimen>
+    <dimen name="cardHeight">50dp</dimen>
+    <dimen name="textTitleWidth">380dp</dimen>
+    <dimen name="titleSize">50sp</dimen>
+    <dimen name="nullGap">0dp</dimen>
+    <dimen name="marginBottonRobotimy">120dp</dimen>
+    <dimen name="marginEndBtn">60dp</dimen>
+    <dimen name="borderWidthBtn">15dp</dimen>
+    <dimen name="marginBottonBtn">120dp</dimen>
+    <dimen name="marginStartBtn">60dp</dimen>
+    <dimen name="marginsGapAppName">32dp</dimen>
+    <dimen name="appNameSize">30sp</dimen>
+    <dimen name="titleSize2">35sp</dimen>
+</resources>
