@@ -28,9 +28,6 @@ class BluetoothFragment : Fragment() {
         btnToWelcome.setOnClickListener{
             it.findNavController().navigate(R.id.action_bluetoothFragment_to_welcomeFragment)
         }
-        btnToControllers.setOnClickListener {
-            it.findNavController().navigate(R.id.action_bluetoothFragment_to_controllersFragment)
-        }
     }
 
     fun bin(){

@@ -1,5 +1,7 @@
 package com.example.zacatales.smartrobotapp
 
+import android.app.Activity
+import android.content.res.Configuration
 import android.os.Bundle
 import android.os.ProxyFileDescriptorCallback
 import androidx.fragment.app.Fragment
@@ -17,7 +19,7 @@ class WelcomeFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        resources.configuration.orientation = Configuration.ORIENTATION_LANDSCAPE
         //FOR THE APP CLOSE ALONE IN MAIN FRAGMENT
         requireActivity().onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
