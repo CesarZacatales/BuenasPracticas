@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ControllersFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_to_previus_controllerFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/nullGap"
+        android:layout_marginStart="@dimen/marginStart_ControllerFragmetn"
+        android:layout_marginBottom="@dimen/marginBottom_ControllerFragment"
+        android:background="@color/btnColor"
+        android:clickable="true"
+        android:contentDescription="@string/actionMoveToBluetooth"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:background="@color/txtColor"
+        app:backgroundTint="@color/btnColor"
+        app:borderWidth="@dimen/borderWidthBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_to_bluetooth_ControllerFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/nullGap"
+        android:layout_marginEnd="@dimen/marginEnd_ControllerFragment"
+        android:layout_marginBottom="@dimen/marginBottom_ControllerFragment"
+        android:background="@color/btnColor"
+        android:clickable="true"
+        android:contentDescription="@string/actionMoveToBluetooth"
+        android:src="@android:drawable/stat_sys_data_bluetooth"
+        app:background="@color/txtColor"
+        app:backgroundTint="@color/btnColor"
+        app:borderWidth="@dimen/borderWidthBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

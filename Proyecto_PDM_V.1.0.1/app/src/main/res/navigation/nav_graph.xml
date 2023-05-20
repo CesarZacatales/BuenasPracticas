@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.zacatales.smartrobotapp.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_bluetoothFragment"
+            app:destination="@id/bluetoothFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_controllersFragment2"
+            app:destination="@id/controllersFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/bluetoothFragment"
+        android:name="com.example.zacatales.smartrobotapp.BluetoothFragment"
+        android:label="fragment_bluetooth"
+        tools:layout="@layout/fragment_bluetooth" >
+        <action
+            android:id="@+id/action_bluetoothFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_bluetoothFragment_to_controllersFragment2"
+            app:destination="@id/controllersFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/controllersFragment2"
+        android:name="com.example.zacatales.smartrobotapp.ControllersFragment"
+        android:label="fragment_controllers"
+        tools:layout="@layout/fragment_controllers" >
+        <action
+            android:id="@+id/action_controllersFragment2_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_controllersFragment2_to_bluetoothFragment"
+            app:destination="@id/bluetoothFragment" />
+    </fragment>
+</navigation>
