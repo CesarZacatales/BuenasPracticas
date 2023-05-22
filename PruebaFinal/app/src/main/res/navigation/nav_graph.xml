@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/billboardFragment">
+
+    <fragment
+        android:id="@+id/billboardFragment"
+        android:name="com.example.zacatales.pruebafinal.ui.pokemon.BillboardFragment"
+        android:label="fragment_billboard"
+        tools:layout="@layout/fragment_billboard" >
+        <action
+            android:id="@+id/action_billboardFragment_to_newPokemonFragment"
+            app:destination="@id/newPokemonFragment" />
+        <action
+            android:id="@+id/action_billboardFragment_to_pokemonFragment"
+            app:destination="@id/pokemonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pokemonFragment"
+        android:name="com.example.zacatales.pruebafinal.ui.pokemon.PokemonFragment"
+        android:label="fragment_pokemon"
+        tools:layout="@layout/fragment_pokemon" />
+    <fragment
+        android:id="@+id/newPokemonFragment"
+        android:name="com.example.zacatales.pruebafinal.ui.pokemon.NewPokemonFragment"
+        android:label="fragment_new_pokemon"
+        tools:layout="@layout/fragment_new_pokemon" />
+</navigation>
